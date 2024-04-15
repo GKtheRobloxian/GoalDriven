@@ -905,6 +905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 7
   objecty: {fileID: 7881807149238628900, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+  patientsInit: 3
 --- !u!4 &727127038
 Transform:
   m_ObjectHideFlags: 0
@@ -2104,6 +2105,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
