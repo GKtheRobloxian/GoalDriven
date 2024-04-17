@@ -8,7 +8,18 @@ public class Nurse : GAgent
     protected override void Start()
     {
         base.Start();
-        SubGoal sl = new SubGoal("treatPatient", 1, true);
+        SubGoal sl = new SubGoal("treatPatient", 1, false);
         goals.Add(sl, 3);
+
+        SubGoal s2 = new SubGoal("rested", 1, false);
+        goals.Add(s2, 1);
+
+        Invoke("GetTired", Random.Range(20, 40));
+    }
+
+    void GetTired()
+    {
+        beliefs.ModifyState("exhausted", 0);
+        Invoke("GetTired", Random.Range(20, 40));
     }
 }
